@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkProtfolio=self.webpackChunkProtfolio||[]).push([[501],{501:(d,t,o)=>{o.r(t),o.d(t,{default:()=>h});const h=[{path:"page",providers:[],children:[{path:"about",loadComponent:()=>o.e(165).then(o.bind(o,165)).then(n=>n.AboutComponent)},{path:"account",loadComponent:()=>o.e(195).then(o.bind(o,195)).then(n=>n.AccountComponent)}]}]}}]);
