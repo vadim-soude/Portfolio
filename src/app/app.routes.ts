@@ -8,6 +8,14 @@ export const routes: Routes = [
 	},
     {
         path: "",
-        loadChildren: () => import("./pages/pages.routes")
+        loadChildren: () => import("./articles/articles.routes")
+    },
+    {
+        path: "contacts",
+        loadComponent: () => import("./contacts/contacts.component").then(module => module.ContactsComponent)
+    },
+    {
+        path: "projets",
+        loadComponent: () => import("./projets/projets.component").then(module => module.ProjetsComponent)
     }
 ]

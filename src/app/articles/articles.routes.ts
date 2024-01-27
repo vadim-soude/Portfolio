@@ -2,12 +2,12 @@ import { Routes } from "@angular/router";
 
 export default [
     {
-        path: "page",
+        path: "articles",
         providers: [],
         children: [
             {
-                path: "about",
-                loadComponent: () => import("./components/about/about.component").then(module => module.AboutComponent)
+                path: "home",
+                loadComponent: () => import("./components/home/home.component").then(module => module.HomeComponent)
             },
             {
                 path: "account",

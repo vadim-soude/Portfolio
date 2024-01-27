@@ -1,0 +1,156 @@
+.header {
+    height: 3vh;
+    background-color: #010409; /* Header background color */
+    color: #c3c3c3;
+    padding: 20px 50px;
+    font-size: 10pt;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body{
+    border-bottom: 4px solid #010409;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-container {
+    width: max-content;
+    padding-left: 35px;
+    padding-right: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list {
+    width: max-content;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.list-item {
+    width: auto;
+    height: auto;
+    padding-left: 35px;
+}
+
+.image{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.logo{
+    height: 40px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-right: 15vh;
+}
+
+.svg{
+    height: 50%;
+}
+
+
+
+.black-bar-container {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    width: auto;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+
+}
+
+.bar {
+    width: 50%; /* Set the width to 100% to make it span the entire container */
+    height: 1px; /* Set the height of the bar */
+    background-color: #B4B6BA; /* Black background color for the bar */
+}
+
+.logo-element{
+    width: 10%;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+}
+.link-element{
+    width: 80%;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+}
+.github-element{
+    width: 10%;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+}
+
+.icon-a {
+    color: #B4B6BA;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+.icon-a:hover {
+    color: white;
+}
+
+.text{
+    text-decoration: none;
+    position: relative;
+    font-weight: 400;
+    color: #B4B6BA;
+    font-size: 15pt;
+    transition: color 0.5s ease;
+}
+
+.text:hover {
+    color: white;
+}
+
+.text::before,
+.text::after {
+    content: '';
+    position: absolute;
+    height: 2px; /* Initial height of the underline */
+    width: 0;
+    background-color: white; /* Underline color */
+    transition: width 0.5s ease-out; /* Transition property for width with a duration of 0.3 seconds and ease-out timing function */
+}
+
+.text::before {
+    left: 30%;
+    bottom: 0;
+    transform-origin: bottom right;
+}
+
+.text::after {
+    right: 30%;
+    bottom: 0;
+    transform-origin: bottom left;
+}
+
+
+
+.text:hover::before,
+.text:hover::after {
+    width: 70%; /* Width of the growing underline on hover */
+}
+
+
