@@ -4,7 +4,8 @@
     --light-switch-icon: "🌙";
     --light-text: #353538;
     --light-text-2: #000000;
-    --light-bg: #f7f7f7;
+    --light-bg: #d1d1d1;
+    --light-bg-2: #ffffff;
     --light-theme: #b3b3b3;
 
     /* Dark mode */
@@ -13,6 +14,7 @@
     --dark-text: #bebdbd;
     --dark-text-2: #ffffff;
     --dark-bg: #010409;
+    --dark-bg-2: #0D1117;
     --dark-theme: #21262D;
 
     /* Default mode */
@@ -21,6 +23,7 @@
     --text-color: var(--dark-text);
     --text-color-2: var(--dark-text-2);
     --bg-color: var(--dark-bg);
+    --bg-color-2: var(--dark-bg-2);
     --theme-color: var(--dark-theme);
 }
 
@@ -31,6 +34,7 @@
     --text-color: var(--light-text);
     --text-color-2: var(--light-text-2);
     --bg-color: var(--light-bg);
+    --bg-color-2: var(--light-bg-2);
     --theme-color: var(--light-theme);
 }
 
@@ -82,16 +86,15 @@ body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#page {
-    background: var(--bg-color);
-    color: var(--text-color);
-    transition: color .5s, background-color .5s;
-}
-
+/*#page {*/
+/*    background: var(--bg-color);*/
+/*    color: var(--text-color);*/
+/*    transition: color .5s, background-color .5s;*/
+/*}*/
 
 .bar {
     width: 100%; /* Set the width to 100% to make it span the entire container */
-    height: 1px; /* Set the height of the bar */
+    height: 2px; /* Set the height of the bar */
     background-color: var(--theme-color); /* Black background color for the bar */
 }
 
@@ -110,7 +113,7 @@ body {
 .main {
     min-height: 100vh;
     color: var(--text-color);
-    background: var(--bg-color);
+    background: var(--bg-color-2);
     width: 100%;
     font-size: 10pt;
     transition: color .2s, background-color .2s;
