@@ -1,11 +1,140 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    /* Light mode */
+    --light-switch-shadow: #2d1d31;
+    --light-switch-icon: "🌑";
+    --light-text: #353538;
+    --light-text-2: #000000;
+    --light-bg: #f7f7f7;
+    --light-theme: #b3b3b3;
 
-html{
-    background-color: #0D1117;
-    color: white;
+    /* Dark mode */
+    --dark-switch-shadow: #d7874c;
+    --dark-switch-icon: "☀️";
+    --dark-text: #bebdbd;
+    --dark-text-2: #ffffff;
+    --dark-bg: #010409;
+    --dark-theme: #21262D;
+
+    /* Default mode */
+    --switch-shadow-color: var(--light-switch-shadow);
+    --switch-icon: var(--light-switch-icon);
+    --text-color: var(--light-text);
+    --text-color-2: var(--light-text-2);
+    --bg-color: var(--light-bg);
+    --theme-color: var(--light-theme);
+}
+
+/* Switched mode */
+.theme-switch:checked ~ #page {
+    --switch-shadow-color: var(--dark-switch-shadow);
+    --switch-icon: var(--dark-switch-icon);
+    --text-color: var(--dark-text);
+    --text-color-2: var(--dark-text-2);
+    --bg-color: var(--dark-bg);
+    --theme-color: var(--dark-theme);
+}
+
+/* Theme switcher */
+.theme-switch { /* Hides the checkbox */
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.switch-label {
+    cursor: pointer;
+    display: flex;
+}
+
+.switch-label::before {
+    content: var(--switch-icon);
+    font-size: 40px;
+    transition: text-shadow .2s;
+}
+
+.switch-label::after {
+    align-self: center;
+    color: var(--switch-shadow-color);
+    font-size: 28px;
+    line-height: 40px;
+    opacity: 0;
+    padding-left: 15px;
+    transition: opacity .2s;
+}
+
+.theme-switch:focus ~ #page .switch-label::before,
+.switch-label:hover::before {
+    text-shadow: 0 0 15px var(--switch-shadow-color);
+}
+
+.theme-switch:focus ~ #page .switch-label::after,
+.switch-label:hover::after {
+    opacity: 1;
+}
+
+/* Styling */
+html,
+body {
+    margin: 0;
+    padding: 0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
-    margin: 0;
+#page {
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: color .2s, background-color .2s;
+}
+
+
+.bar {
+    width: 100%; /* Set the width to 100% to make it span the entire container */
+    height: 1px; /* Set the height of the bar */
+    background-color: var(--theme-color); /* Black background color for the bar */
+}
+
+.header {
+    height: 7vh;
+    color: var(--text-color);
+    background: var(--bg-color);
+    width: 100%;
+    font-size: 10pt;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color .2s, background-color .2s;
+}
+
+.main {
+    min-height: 100vh;
+    color: var(--text-color);
+    background: var(--bg-color);
+    width: 100%;
+    font-size: 10pt;
+    transition: color .2s, background-color .2s;
+}
+
+.text{
+    text-decoration: none;
+    position: relative;
+    font-weight: 400;
+    color: var(--text-color);
+    font-size: 15pt;
+    transition: color 0.5s ease;
+}
+
+.text:hover {
+    color: var(--text-color-2);
+}
+
+.text::before,
+.text::after {
+    content: '';
+    position: absolute;
+    height: 2px; /* Initial height of the underline */
+    width: 0;
+    background-color: var(--text-color-2); /* Underline color */
+    transition: width 0.5s ease-out; /* Transition property for width with a duration of 0.3 seconds and ease-out timing function */
 }
