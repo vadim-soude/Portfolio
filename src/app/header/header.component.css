@@ -24,7 +24,6 @@
 }
 
 .logo-element{
-    width: 10%;
     display: flex;
     justify-content: center; /* Center the content horizontally */
     align-items: center;
@@ -34,21 +33,9 @@
     width: 100%;
 }
 
-.icon-element{
+.spacer{
     width: 10%;
 }
-
-.icon-a {
-    color: #B4B6BA;
-    text-decoration: none;
-    transition: color 0.5s ease;
-}
-
-.icon-a:hover {
-    color: white;
-}
-
-
 
 .text::before {
     left: 30%;
