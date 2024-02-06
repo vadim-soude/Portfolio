@@ -30,7 +30,7 @@ const config = {
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	kit: {
 		adapter: adapter()
-	}
+	},
 }
 
 export default config
