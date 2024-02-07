@@ -75,9 +75,7 @@
 			</ul>
 		</div>
 	</div>
-
 	<hr>
-
 	<h1 style="white-space: nowrap">Projets personnels</h1><br><br>
 	<h2>SAO Reforged</h2>
 	<a href="http://www.saoreforged.fr">Website WIP.</a><br><br>
