@@ -1,5 +1,5 @@
 ---
-title: Comment rédiger en Markdown
+title: Comment rédiger en Markdown.
 description: Comment ecrire du texte/documentation en Markdown.
 date: '2024-1-20'
 categories:
@@ -7,7 +7,7 @@ categories:
 published: true
 ---
 
-Cet article a pour but de vous apprendre à écrire en [Markdown](https://fr.wikipedia.org/wiki/Markdown) pour la rédaction de vos documentation, de prise de note ou de première mise au propre d'écrit divers.
+Cet article a pour but de vous apprendre à écrire en [Markdown](https://fr.wikipedia.org/wiki/Markdown) pour la rédaction de vos documentations, de prise de note ou de première mise au propre d'écrit divers.
 
 Je serais donc concis afin de pouvoir utiliser cet article comme d’un aide-mémoire.
 
@@ -17,7 +17,7 @@ Je serais donc concis afin de pouvoir utiliser cet article comme d’un aide-mé
 
 Le symbole `#` permet de définir vos titres / headers.
 
-Le nombre d' `#` permet de définir la taille de votre titre, un seul permet d'obtenir un grand titre comme en haut de cette article et cela est possible jusqu'à cinq `#` pour obtenir un titre comme suivant :
+Le nombre d' `#` permet de définir la taille de votre titre, un seul permet d'obtenir un grand titre comme en haut de cet article et cela est possible jusqu'à cinq `#` pour obtenir un titre comme suivant :
 
 `##### Exemple titre`
 
@@ -64,9 +64,9 @@ Des options de formatage de texte classique sont disponibles en markdown.
 
 ### Block de code
 
-` ```python `
-` def awesome(): `
-`  print('awesome!')`
+` ```python `<br>
+` def awesome(): `<br>
+`  print('awesome!')`<br>
 ` awesome()``` `
 
 ```python
@@ -83,8 +83,8 @@ awesome()
 
 ### Listes ordonées
 
-`1. Premier élément`
-`2. Second élément`
+`1. Premier élément`<br>
+`2. Second élément`<br>
 `3. Troisième élément`
 
 1. Premier élément
@@ -93,8 +93,8 @@ awesome()
 
 ### Listes non-ordonées
 
-`- Premier élément`
-`- Second élément`
+`- Premier élément`<br>
+`- Second élément`<br>
 `- Troisième élément`
 
 - Premier élément
@@ -105,8 +105,8 @@ awesome()
 
 ### Liste de tache
 
-`- [x] Premier élément`
-`- [ ] Second élément`
+`- [x] Premier élément`<br>
+`- [ ] Second élément`<br>
 `- [ ] Troisième élément`
 
 - [x] Premier élément
@@ -117,29 +117,15 @@ awesome()
 
 ## Les tableaux
 
-`| Categorie | Nom |`
-`| - | - |`
-`| Chat | Lopo |`
-`| Chien | Bob |`
+`| Categorie | Nom |`<br>
+`| - | - |`<br>
+`| Chat | Lopo |`<br>
+`| Chien | Bob |`<br><br>
 
-| Categorie | Nom |
+| Categorie | Nom | 
 | - | - |
 | Chat | Lopo |
 | Chien | Bob |
-
----
-
-## Notes de bas de page
-
-`Ce texte mérite une note [^1]`
-
-`[^1]: La note explicative.`
-
-Ce texte mérite une note [^1]
-
-[^1]: La note explicative.
-
-**Note** : La note sera généré tout en bas de la page et sera lié a l'aide du numéro unique ou non présent a coté du texte.
 
 ---
 
@@ -183,9 +169,9 @@ Utilisations de tag html est possible et autorisé en Markdown.
 
 Cela permet notament d'utilisé les `<u></u>` pour <u>souligner</u> du texte (ce qui n'est pas possible avec le typage markdown basique)[^2].
 
-[^2]: Discord a popularisé l'utilisation de double `_` autour du texte a souligné mais cela n'est pas du markdown mais un ajout de leur part.
+[^2]: Discord a popularisé l'utilisation de double `_` autour du texte a souligné, mais cela n'est pas du markdown mais un ajout de leur part.
 
-Il est aussi possible d'utilisé du [CSS](https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade) affin d'aller encore plus loin !
+Il est aussi possible d'utiliser du [CSS](https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade) affin d'aller encore plus loin !
 
 **Exemple** : `<span style="color:#dbce14">Du jaune !</span>` : <span style="color:#dbce14">Du jaune !</span>
 
@@ -203,6 +189,5 @@ Il est aussi possible d'utilisé du [CSS](https://fr.wikipedia.org/wiki/Feuilles
 
 ---
 
-*L'entièreté de cet article est écrit en markdown puis transformé en code html en utilisant cet [outil](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced).*
+*L'entièreté de mes articles sont écrit en Markdown.*
 
-> Vadim Soudé, Janvier 2024 

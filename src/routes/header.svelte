@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Toggle from './toggle.svelte'
 	import * as config from '$lib/config'
+	import { base } from '$app/paths';
 </script>
 
 <nav>
@@ -13,16 +14,16 @@
 
 	<ul class="links">
 		<li>
-			<a class="a-header" href="/">Accueil</a>
+			<a class="a-header" href="{base}/">Accueil</a>
 		</li>
 		<li>
-			<a class="a-header" href="/projets">Projets</a>
+			<a class="a-header" href="{base}/projets">Projets</a>
 		</li>
 		<li>
-			<a class="a-header" href="/article">Articles</a>
+			<a class="a-header" href="{base}/article">Articles</a>
 		</li>
 		<li>
-			<a class="a-header" href="/contact">Contacts</a>
+			<a class="a-header" href="{base}/contact">Contacts</a>
 		</li>
 	</ul>
 
@@ -31,7 +32,8 @@
 
 <style>
 	nav {
-		padding-block: var(--size-7);
+			padding-block: var(--size-7);
+			width: 100%;
 	}
 
 	.links {

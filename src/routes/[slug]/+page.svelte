@@ -13,7 +13,7 @@
 <article>
 	<hgroup>
 		<h1>{data.meta.title}</h1>
-		<p>Published at {formatDate(data.meta.date)}</p>
+		<p>Publié le {formatDate(data.meta.date)}</p>
 	</hgroup>
 
 	<div class="tags">
@@ -29,12 +29,13 @@
 
 <style>
 	article {
-		max-inline-size: var(--size-content-3);
+		max-inline-size: var(--size-content-5);
 		margin-inline: auto;
+      font-size: var(--font-size-2);
 	}
 
-	h1 {
-		text-transform: capitalize;
+	p{
+      max-inline-size: var(--size-content-5);
 	}
 
 	h1 + p {
