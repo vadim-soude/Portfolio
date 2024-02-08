@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static'
+import adapter from '@sveltejs/adapter-vercel'
 import { vitePreprocess } from '@sveltejs/kit/vite'
 
 import { mdsvex, escapeSvelte } from 'mdsvex'
@@ -29,10 +29,7 @@ const config = {
 	extensions: ['.svelte', '.md'],
 	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
 	kit: {
-		adapter: adapter(),
-		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/Portfolio' : '',
-		}
+		adapter: adapter()
 	},
 }
 

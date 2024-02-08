@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Toggle from './toggle.svelte'
-	import * as config from '$lib/config'
 	import { base } from '$app/paths';
 </script>
 
