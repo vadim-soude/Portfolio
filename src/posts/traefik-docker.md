@@ -121,10 +121,11 @@ services:
       - "traefik.http.middlewares.testheader.headers.accesscontrolalloworiginlist=https://exemple.fr"
       - "traefik.http.middlewares.testheader.headers.accesscontrolmaxage=100"
       - "traefik.http.middlewares.testheader.headers.addvaryheader=true"
+
 networks:
   # Appel du network Docker
-  external:
-    - treafik
+  traefik:
+    external: true
 ````
 
 ## Comment déployer

@@ -1,0 +1,107 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "/about",
+			"dest": "/about/"
+		},
+		{
+			"src": "/about/",
+			"status": 308,
+			"headers": {
+				"Location": "/about"
+			}
+		},
+		{
+			"src": "/article",
+			"dest": "/article/"
+		},
+		{
+			"src": "/article/",
+			"status": 308,
+			"headers": {
+				"Location": "/article"
+			}
+		},
+		{
+			"src": "/contact",
+			"dest": "/contact/"
+		},
+		{
+			"src": "/contact/",
+			"status": 308,
+			"headers": {
+				"Location": "/contact"
+			}
+		},
+		{
+			"src": "/projets",
+			"dest": "/projets/"
+		},
+		{
+			"src": "/projets/",
+			"status": 308,
+			"headers": {
+				"Location": "/projets"
+			}
+		},
+		{
+			"src": "/traefik-docker",
+			"dest": "/traefik-docker/"
+		},
+		{
+			"src": "/traefik-docker/",
+			"status": 308,
+			"headers": {
+				"Location": "/traefik-docker"
+			}
+		},
+		{
+			"src": "/how-to-markdown",
+			"dest": "/how-to-markdown/"
+		},
+		{
+			"src": "/how-to-markdown/",
+			"status": 308,
+			"headers": {
+				"Location": "/how-to-markdown"
+			}
+		},
+		{
+			"src": "/_app/immutable/.+",
+			"headers": {
+				"cache-control": "public, immutable, max-age=31536000"
+			}
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "/.*",
+			"dest": "/fn"
+		}
+	],
+	"overrides": {
+		"index.html": {
+			"path": ""
+		},
+		"about.html": {
+			"path": "about"
+		},
+		"article.html": {
+			"path": "article"
+		},
+		"contact.html": {
+			"path": "contact"
+		},
+		"projets.html": {
+			"path": "projets"
+		},
+		"traefik-docker.html": {
+			"path": "traefik-docker"
+		},
+		"how-to-markdown.html": {
+			"path": "how-to-markdown"
+		}
+	}
+}
