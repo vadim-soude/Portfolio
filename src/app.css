@@ -199,6 +199,17 @@ li {
 	max-inline-size: 80%;
 }
 
+.dropdown-content {
+	background: var(--surface-4);
+}
+
+.box{
+	border: 3px solid var(--text-2);
+	padding-left: 15px;
+	padding-top: 10px;
+	border-radius: 15px;
+}
+
 .prose p:not(:is(h2, h3, h4, h5, h6) + p) {
 	margin-top: var(--size-7);
 	max-inline-size: 80%;
