@@ -34,7 +34,7 @@
 	}
 
 	main {
-		padding-block: var(--size-9);
+		padding-block: var(--size-5);
 	}
 
 	@media (min-width: 1440px) {

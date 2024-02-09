@@ -3,7 +3,7 @@ title: Comment rédiger en Markdown.
 description: Comment ecrire du texte/documentation en Markdown.
 date: '2024-1-20'
 categories:
-  - howto
+  - Tuto
 published: true
 ---
 

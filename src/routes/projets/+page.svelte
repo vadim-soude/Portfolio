@@ -1,7 +1,5 @@
 <section>
-	<h1 style="white-space: nowrap">Expériences professionnelles</h1>
-
-	<br><br>
+	<h1 style="white-space: nowrap">Expériences professionnelles</h1><br><br>
 
 	<div class="box">
 		<h2>PoudlardRP</h2>
@@ -151,6 +149,7 @@
 	</div>
 
 	<br><br>
+
 	<div class="box">
 	<h2>Site du BDE InfoContact</h2>
 	<a href="https://www.linkedin.com/company/info-contact/">Linkedin du bureau.</a><br>
@@ -207,18 +206,9 @@
         margin-bottom: 5vh;
     }
 
-    ul {
-        padding-left: 2vh;
-    }
-
     .text {
         font-size: 20px;
 				padding-top: 15px;
-    }
-
-    li {
-        font-size: 15px;
-        white-space: nowrap;
     }
 
     .dropdown {

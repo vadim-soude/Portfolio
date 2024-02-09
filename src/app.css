@@ -203,6 +203,10 @@ li {
 	background: var(--surface-4);
 }
 
+input{
+	background: var(--surface-4);
+}
+
 .box{
 	border: 3px solid var(--text-2);
 	padding-left: 15px;

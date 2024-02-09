@@ -4,7 +4,7 @@
 </script>
 
 <footer>
-	<p>{config.title} &copy {new Date().getFullYear()}</p>
+	<p><a class="a-header title" href="https://github.com/vadim-soude/Portfolio">{config.title} &copy {new Date().getFullYear()}</a></p>
 </footer>
 
 <style>
