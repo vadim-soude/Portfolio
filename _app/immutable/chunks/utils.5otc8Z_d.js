@@ -1,0 +1,1 @@
+function o(e,t="medium",r="fr"){return new Intl.DateTimeFormat(r,{dateStyle:t}).format(new Date(e))}function n(e,t){if(t==="")return!0;let r=e.toLowerCase(),a=t.toLowerCase();return r.includes(a)}export{o as f,n as s};
