@@ -18,7 +18,7 @@
 	</div>
 	<ul class="posts">
 		{#each data.posts as post}
-			{#if search(post.title, searchData)}
+			{#if search(post, searchData)}
 				<li class="post">
 					<a href={post.slug} class="title">{post.title}</a>
 					<p class="description">{post.description}</p>
@@ -70,14 +70,6 @@
     .description {
         margin-top: var(--size-1);
     }
-
-		body{
-				display: flex;
-		}
-
-		input{
-
-		}
 
     .search-module{
 				display: flex;
