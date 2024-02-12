@@ -1,9 +1,9 @@
 ---
 title: Comment rédiger en Markdown.
-description: Comment ecrire du texte/documentation en Markdown.
+description: Comment écrire du texte ou de la documentation en Markdown.
 date: '2024-1-20'
 categories:
-  - Tuto
+  - Documentation
 published: true
 ---
 
@@ -29,7 +29,7 @@ Le nombre d' `#` permet de définir la taille de votre titre, un seul permet d'o
 
 ## Les séparateurs
 
-Les séparateurs sont les lignes horizontales qui sépare les différentes catégories de cet article, ces séparateurs peuvent être ajoutés à l'aide de `---` précédé et suivit d'un retour à la ligne.
+Les séparateurs sont les lignes horizontales qui séparent les différentes catégories de cet article, ces séparateurs peuvent être ajoutés à l'aide de `---` précédé et suivit d'un retour à la ligne.
 
 ---
 
@@ -41,7 +41,7 @@ Des options de formatage de texte classique sont disponibles en markdown.
 
 `**Texte**` : **Texte**
 
-### italique
+### Italique
 
 `*Texte*` : *Texte*
 
@@ -81,7 +81,7 @@ awesome()
 
 ## Les listes
 
-### Listes ordonées
+### Listes ordonnées
 
 `1. Premier élément`<br>
 `2. Second élément`<br>
@@ -101,7 +101,7 @@ awesome()
 - Second élément
 - Troisième élément
 
-**Note** : Les puces utilisé ici sont des `-` mais peuvent être remplacé par des `+` ou des `*`. Des sous listes sont aussi possibles et les puces prendrons une apparence différente.
+**Note** : Les puces utilisées ici sont des `-` mais peuvent être remplacées par des `+` ou des `*`. Des sous listes sont aussi possibles et les puces prendrons une apparence différente.
 
 ### Liste de tache
 
@@ -165,11 +165,11 @@ Passez votre curseur sur ce [lien](https://www.google.com "Super site !") !
 
 ## Support HTML
 
-Utilisations de tag html est possible et autorisé en Markdown.
+Utilisation de tag html est possible et autorisé en Markdown.
 
-Cela permet notament d'utilisé les `<u></u>` pour <u>souligner</u> du texte (ce qui n'est pas possible avec le typage markdown basique)[^2].
+Cela permet notamment d’utiliser les `<u></u>` pour <u>souligner</u> du texte (ce qui n'est pas possible avec le typage markdown basique)[^2].
 
-[^2]: Discord a popularisé l'utilisation de double `_` autour du texte a souligné, mais cela n'est pas du markdown mais un ajout de leur part.
+[^2]: Discord a popularisé l'utilisation de double `_` autour du texte à souligner, mais cela n'est pas du markdown mais un ajout de leur part.
 
 Il est aussi possible d'utiliser du [CSS](https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade) affin d'aller encore plus loin !
 
