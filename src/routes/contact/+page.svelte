@@ -2,8 +2,8 @@
 	<h1>Contact</h1><br>
 	<span class="text">Vous avez des questions ?</span><br>
 	<span class="text">Vous êtes intéressé par mon profil ?</span><br>
-	<span class="text">Et pour toute autre demandes, n'hésitez pas à me contacter par mail : <a href="mailto:vadimsoude@gmail.com">vadimsoude@gmail.com</a>,</span><br>
-	<span class="text">Je suis aussi sur <a href="https://www.linkedin.com/in/soude-vadim/">Linkedin</a> !</span><br>
+	<span class="text">Et pour toute autre demande, n'hésitez pas à me contacter par mail : <a href="mailto:vadimsoude@gmail.com">vadimsoude@gmail.com</a>,</span><br>
+	<span class="text">Je suis aussi sur <a target="_blank" href="https://www.linkedin.com/in/soude-vadim/">Linkedin</a> !</span><br>
 
 </section>
 

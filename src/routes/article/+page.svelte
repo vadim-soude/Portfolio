@@ -69,6 +69,7 @@
 
     .description {
         margin-top: var(--size-1);
+        max-inline-size: var(--size-content-5);
     }
 
     .search-module{

@@ -20,7 +20,7 @@
 		{#each data.meta.categories as category}
 			<span class="surface-4">&num;{category}</span>
 		{/each}
-	</div>
+	</div><br>
 
 	<div class="prose">
 		<svelte:component this={data.content} />
@@ -29,7 +29,7 @@
 
 <style>
 	article {
-		max-inline-size: var(--size-content-5);
+		max-inline-size: 90ch;
 		margin-inline: auto;
       font-size: var(--font-size-2);
 	}

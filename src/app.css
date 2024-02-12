@@ -135,7 +135,6 @@ body {
 html {
 	color: var(--text-1);
 	accent-color: var(--link);
-	padding-left: var(--size-3);
 	background-image: var(--background);
 	background-attachment: fixed;
 
@@ -196,7 +195,7 @@ li {
 .prose :is(h2, h3, h4, h5, h6) {
 	margin-top: var(--size-8);
 	margin-bottom: var(--size-3);
-	max-inline-size: 80%;
+	max-inline-size: 100%;
 }
 
 .dropdown-content {
@@ -216,7 +215,7 @@ input{
 
 .prose p:not(:is(h2, h3, h4, h5, h6) + p) {
 	margin-top: var(--size-7);
-	max-inline-size: 80%;
+	max-inline-size: 100%;
 }
 
 .prose :is(ul, ol) {
@@ -234,9 +233,13 @@ blockquote{
 	padding-top: 0;
 }
 
+p{
+	max-inline-size: 100%;
+}
+
 .prose pre {
 	max-inline-size: 100%;
-	max-width: 80%;
+	max-width: 100%;
 	overflow-x: auto;
 	overflow-block: hidden;
 	padding: var(--size-2);

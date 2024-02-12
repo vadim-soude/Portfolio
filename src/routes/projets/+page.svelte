@@ -3,7 +3,7 @@
 
 	<div class="box">
 		<h2>PoudlardRP</h2>
-		<a href="https://www.linkedin.com/company/poudlardrp/">Linkedin du projet.</a><br>
+		<a href="https://www.linkedin.com/company/poudlardrp/" target="_blank">Linkedin du projet.</a><br>
 		<div class="info-box">
 		<span class="text">
 			<span style="font-weight: bold">Activité</span> : Développeur junior java pendant 6 mois,
@@ -55,7 +55,7 @@
 
 	<div class="box">
 	<h2>Mercure Studio</h2>
-	<a href="https://www.linkedin.com/company/mercure-studio-europe/">Linkedin de la société.</a><br>
+	<a href="https://www.linkedin.com/company/mercure-studio-europe/" target="_blank">Linkedin de la société.</a><br>
 	<div class="info-box">
 		<span class="text">
 			<span style="font-weight: bold">Activité</span> : Développeur Java - Android.
@@ -69,7 +69,7 @@
 				style="font-weight: bold">Informations</span> : Réalisation d'une application "template" dans le cadre du développement de l'offre de SAS.</span></label>
 			<div class="dropdown-content">
 				<span class="text">
-					Réalisation d'une application ayant pour but de fournir à des restaurateur, leur propre application mobile pour la réservation de tables et de repas à emporter. <br>
+					Réalisation d'une application ayant pour but de fournir à des restaurateurs leur propre application mobile pour la réservation de tables et de repas à emporter. <br>
 				</span>
 			</div>
 		</div>
@@ -99,10 +99,10 @@
 
 	<div class="box">
 	<h2>SAO Reforged</h2>
-	<a href="http://www.saoreforged.fr">Website WIP.</a><br>
+	<a href="http://www.saoreforged.fr" target="_blank">Website WIP.</a><br>
 	<div class="info-box">
 		<span class="text">
-			<span style="font-weight: bold">Activité</span> : Fondateur, responsable, manager et développeur du projet.
+			<span style="font-weight: bold">Activité</span> : Président de l'association, responsable, manager et développeur du projet.
 	 	</span>
 		<span class="text">
 			<span style="font-weight: bold">Date</span> : Septembre 2022 - En cours.
@@ -113,9 +113,9 @@
 				style="font-weight: bold">Informations</span> : Création d'un serveur Minecraft MMORPG sur le thème de l'animé Sword Art Online.</span></label>
 			<div class="dropdown-content">
 				<span class="text">
-			Ce projet est soutenu par une petite équipe de bénévoles travaillant entre amis essayant de réaliser un serveur qui peut nous rendre fier. <br>
+			Ce projet est soutenu par une petite équipe de bénévoles travaillant entre amis essayant de réaliser un serveur qui peut nous rendre fiers. <br>
 			Celui-ci me permet de développer de nombreuses compétences et de m'améliorer dans un cadre presque professionnel. <br>
-			J'ai pour ambition de mener à bien ce projet, sortir un serveur qui plaisent aux joueurs et continuer autant que possible.
+			J'ai pour ambition de mener à bien ce projet, sortir un serveur qui plaise aux joueurs et continuer autant que possible.
 				</span>
 			</div>
 		</div>
@@ -152,10 +152,10 @@
 
 	<div class="box">
 	<h2>Site du BDE InfoContact</h2>
-	<a href="https://www.linkedin.com/company/info-contact/">Linkedin du bureau.</a><br>
+	<a href="https://www.linkedin.com/company/info-contact/" target="_blank">Linkedin du bureau.</a><br>
 	<div class="info-box">
 		<span class="text">
-			<span style="font-weight: bold">Activité</span> : Dévellopeur principale et chargé de mission du BDE Info Contact.
+			<span style="font-weight: bold">Activité</span> : Développeur principale et chargé de mission du BDE Info Contact.
 	 	</span>
 		<span class="text">
 			<span style="font-weight: bold">Date</span> : Octobre 2023 - Février 2024.
@@ -166,7 +166,7 @@
 				style="font-weight: bold">Informations</span> : Projet de réalisation d'un site d'information et de vente du BDE de mon IUT.</span></label>
 			<div class="dropdown-content">
 				<span class="text">
-					Ce projet a été réalisé en équipe dans le cadre de la SAE du second semestre de ma troisième année de BUT Informatique. <br>
+					Ce projet a été réalisé en équipe dans le cadre de la SAE du premier semestre de ma troisième année de BUT Informatique. <br>
 					Ce projet m'a permis d'apprendre plusieurs nouveaux frameworks et environnement de travail. <br>
 					Je me suis investi au maximum dans ce projet pour obtenir la note maximale de 16/16.
 				</span>
