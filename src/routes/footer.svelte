@@ -9,7 +9,9 @@
 
 <style>
 	footer {
-		padding-block: var(--size-7);
+
+      padding: var(--size-4);
+      background-color: var(--surface-1);
 		border-top: 1px solid var(--border);
 	}
 

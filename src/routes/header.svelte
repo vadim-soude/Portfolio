@@ -31,8 +31,12 @@
 
 <style>
 	nav {
-			padding-block: var(--size-7);
 			width: 100%;
+			padding: var(--size-6);
+			padding-top: var(--size-4);
+      padding-bottom: var(--size-4);
+      background-color: var(--surface-1);
+      border-bottom: 1px solid var(--border);
 	}
 
 	.links {
