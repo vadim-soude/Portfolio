@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="https://fav.farm/📚" />
+		<title>Portfolio - Vadim Soudé</title>
+		<script type="module">
+			const theme = localStorage.getItem('color-scheme')
+			theme
+				? document.documentElement.setAttribute('color-scheme', theme)
+				: localStorage.setItem('color-scheme', 'dark')
+		</script>
+		
+		<link href="./_app/immutable/assets/0.MuI6fbD9.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/7.Kf0qjzxR.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.2-cFT1q6.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.rDtGiAC-.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.-uegzcIy.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.Q7a3wE-v.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/control.g9yvpsvX.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.pzcqOHD1.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.0HuHagjb.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.ZNabRreu.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/config.IX8X3kk1.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/7.GhtOrpzo.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/utils.RwzHMXmu.js"><title>Deploiement d'un service web avec Traefik.</title><!-- HEAD_svelte-ylbs26_START --><meta property="og:type" content="article"><meta property="og:title" content="Deploiement d'un service web avec Traefik."><!-- HEAD_svelte-ylbs26_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">
+
+
+
+<div class="layout svelte-1imr7bc"><nav class="svelte-1ja2ihx"><a href="https://github.com/vadim-soude" class="a-header title svelte-1ja2ihx"><b class="svelte-1ja2ihx">Github</b>
+		<svg class="svg" width="20" height="20" viewBox="0 0 16 16"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" fill="currentColor"></path></svg></a>
+
+	<ul class="links svelte-1ja2ihx"><li><a class="a-header" href="/sveltekit-gh-pages/">Accueil</a></li>
+		<li><a class="a-header" href="/sveltekit-gh-pages/projets">Projets</a></li>
+		<li><a class="a-header" href="/sveltekit-gh-pages/article">Articles</a></li>
+		<li><a class="a-header" href="/sveltekit-gh-pages/contact">Contacts</a></li></ul>
+
+	<button aria-label="Toggle theme" class="svelte-114mtci"><div class="svelte-114mtci"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-moon "><path d="M12 3a6.364 6.364 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+			<span>Dark</span></div>
+</button>
+</nav>
+
+	<main class="svelte-1imr7bc"><div class="transition svelte-vcdv4c">
+
+<article class="svelte-1pjyvf3"><hgroup><h1 class="svelte-1pjyvf3">Deploiement d'un service web avec Traefik.</h1>
+		<p class="svelte-1pjyvf3">Publié le 10 févr. 2024</p></hgroup>
+
+	<div class="tags svelte-1pjyvf3"><span class="surface-4 svelte-1pjyvf3">#Docker</span><span class="surface-4 svelte-1pjyvf3">#Réseau</span><span class="surface-4 svelte-1pjyvf3">#Proxy</span>
+	</div><br>
+
+	<div class="prose"><blockquote><p><strong>DISCLAIMER :</strong>
+L’ensemble des manipulations suivantes ont été réalisé sur <strong>Ubuntu Server 22.04 LTS</strong> avec <strong>Traefik v2.11</strong>.<br>
+Si vous n’utilisez pas cette distribution Unix ou que vous utilisez un autre système d’exploitation certaines choses peuvent
+être différentes et je ne peux pas garantir que cela fonctionnera sur votre machine / serveur.</p></blockquote>
+<h2 id="prérequis">Prérequis</h2>
+<p>Cet article est la suite directe de <a href="https://vadim-soude.github.io/Portfolio/traefik-docker" rel="nofollow">celui-ci</a>.</p>
+<p>Je vous invite vivement à avoir suivi la première partie avant de continuer.</p>
+<h2 id="dockeriser-de-vos-services-web">Dockeriser de vos services Web</h2>
+<p>Dans cet article, la demonstration sera faite avec Docker comme solution de déploiement de service web.</p>
+<p>Qu’est-ce que Docker ? C’est un outil qui permet de déployer des applications dans des conteneurs. Un conteneur est un environnement isolé qui contient tout ce dont une application a besoin pour fonctionner, y compris le code, les bibliothèques et les dépendances.</p>
+<p>En apprendre plus sur Docker <a href="https://www.docker.com" rel="nofollow">ici</a>.</p>
+<h2 id="modifications-à-apporter">Modifications à apporter</h2>
+<p>Dans le fichier <code>dockercompose.yml</code> de votre service, dans la section de votre service, ajouter les mentions suivante :</p>
+<!-- HTML_TAG_START --><pre class="shiki poimandres" style="background-color: #1b1e28" tabindex="0"><code><span class="line"><span style="color: #A6ACCD">    </span><span style="color: #5DE4C7">networks</span><span style="color: #A6ACCD">:</span></span>
+<span class="line"><span style="color: #A6ACCD">      </span><span style="color: #767C9DB0; font-style: italic"># Il faut que votre service soit dans le même network docker</span></span>
+<span class="line"><span style="color: #A6ACCD">      - </span><span style="color: #ADD7FF">traefik</span></span>
+<span class="line"><span style="color: #A6ACCD">    </span><span style="color: #5DE4C7">labels</span><span style="color: #A6ACCD">:</span></span>
+<span class="line"><span style="color: #A6ACCD">      </span><span style="color: #767C9DB0; font-style: italic"># Activé Traefik pour ce service car celui-ci ne l&#39;est pas par default</span></span>
+<span class="line"><span style="color: #A6ACCD">      - </span><span style="color: #A6ACCD">&quot;</span><span style="color: #5DE4C7">traefik.enable=true</span><span style="color: #A6ACCD">&quot;</span></span>
+<span class="line"><span style="color: #A6ACCD">      </span></span>
+<span class="line"><span style="color: #A6ACCD">      </span><span style="color: #767C9DB0; font-style: italic"># Dans les labels suivants, il faut remplacer la mention &#39;nomduservice&#39; par le nom de votre service</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #A6ACCD">      </span><span style="color: #767C9DB0; font-style: italic"># Remplacer &#39;XXXX&#39; par le sous domaine de votre choix, souvent, cela sera le nom de votre service</span></span>
+<span class="line"><span style="color: #A6ACCD">      - </span><span style="color: #A6ACCD">&quot;</span><span style="color: #5DE4C7">traefik.http.routers.nomduservice.rule=Host(&#96;XXXX.exemple.fr&#96;)</span><span style="color: #A6ACCD">&quot;</span></span>
+<span class="line"><span style="color: #A6ACCD">      </span><span style="color: #767C9DB0; font-style: italic"># Activé l&#39;HTTPS sur la page</span></span>
+<span class="line"><span style="color: #A6ACCD">      - </span><span style="color: #A6ACCD">&quot;</span><span style="color: #5DE4C7">traefik.http.routers.nomduservice.entrypoints=websecure</span><span style="color: #A6ACCD">&quot;</span></span>
+<span class="line"><span style="color: #A6ACCD">      </span><span style="color: #767C9DB0; font-style: italic"># Le nom du certificat paramétré dans Traefik</span></span>
+<span class="line"><span style="color: #A6ACCD">      - </span><span style="color: #A6ACCD">&quot;</span><span style="color: #5DE4C7">traefik.http.routers.nomduservice.tls.certresolver=myresolver</span><span style="color: #A6ACCD">&quot;</span></span>
+<span class="line"><span style="color: #A6ACCD">      </span><span style="color: #767C9DB0; font-style: italic"># Le port du service dans le proxy</span></span>
+<span class="line"><span style="color: #A6ACCD">      - </span><span style="color: #A6ACCD">&quot;</span><span style="color: #5DE4C7">traefik.http.services.nomduservice.loadbalancer.server.port=8080</span><span style="color: #A6ACCD">&quot;</span></span></code></pre><!-- HTML_TAG_END -->
+<p>Il faut aussi penser à ajouter la mention du réseau Traefik dans le fichier.</p>
+<!-- HTML_TAG_START --><pre class="shiki poimandres" style="background-color: #1b1e28" tabindex="0"><code><span class="line"><span style="color: #5DE4C7">networks</span><span style="color: #A6ACCD">:</span></span>
+<span class="line"><span style="color: #A6ACCD">  </span><span style="color: #767C9DB0; font-style: italic"># Appel du network Docker</span></span>
+<span class="line"><span style="color: #A6ACCD">  </span><span style="color: #5DE4C7">traefik</span><span style="color: #A6ACCD">:</span></span>
+<span class="line"><span style="color: #A6ACCD">    </span><span style="color: #5DE4C7">external</span><span style="color: #A6ACCD">: </span><span style="color: #5DE4C7">true</span></span></code></pre><!-- HTML_TAG_END -->
+<h2 id="configuration-dns">Configuration DNS</h2>
+<p>Pour accéder à votre service sur le sous domaine de votre choix, il faut que celui-ci soit résolu par un serveur DNS.</p>
+<p>Pour cela, il faut ajouter une entrée DNS de type A pour le sous domaine de votre choix, qui pointe vers l’adresse IP de votre serveur.</p>
+<h2 id="comment-déployer">Comment déployer</h2>
+<p>Il vous suffit maintenant de faire <code>docker compose up -d</code>, votre service sera disponible sur le sous domaine de votre choix.</p></div>
+</article></div></main>
+
+	<footer class="svelte-c7wlo5"><p class="svelte-c7wlo5"><a class="a-header title" href="https://github.com/vadim-soude/Portfolio">Portfolio - Vadim Soudé © 2024</a></p>
+</footer>
+</div>
+
+
+			
+			<script>
+				{
+					__sveltekit_16p5o9n = {
+						assets: "/sveltekit-gh-pages",
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.2-cFT1q6.js"),
+						import("./_app/immutable/entry/app.pzcqOHD1.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 7],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
