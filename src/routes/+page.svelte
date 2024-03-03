@@ -43,11 +43,9 @@
 		{ alt:"PaperMc",src:"https://docs.papermc.io/assets/images/papermc-logomark-512-f125384f3367cd4d9291ca983fcb7334.png"},
 		{ alt:".NET Entity Framework",src:"https://greenfinchwebsitestorage.blob.core.windows.net/media/2020/03/Microsoft_Entity-Framework.png" },
 		{ alt:"React",src:"https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_wordmark_logo_icon_146375.png" },
-		{},
 		{ alt:"Express",src:"https://cdn.icon-icons.com/icons2/2415/PNG/512/express_original_wordmark_logo_icon_146528.png" },
 		{ alt:"Express",src:"https://www.dammio.com/wp-content/uploads/2017/03/jquery-logo.png" },
 		{ alt:"Lib GDX", src:"https://libgdx.com/assets/brand/stacked.png"},
-		{}
 	];
 
 	let elemets = [
@@ -98,15 +96,15 @@
     .logo-tab {
         width: 60%;
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap: 20px; /* Adjust the spacing between logos */
-        margin: 20px;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 2%; /* Adjust the spacing between logos */
+				grid-row-gap: 9%;
     }
 
     .logo {
         width: 100%; /* Adjust the width of each logo */
         height: 100%;
-        padding: 10px;
+        padding: 4%;
         display: flex;
         justify-content: center;
         align-items: center;
