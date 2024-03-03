@@ -14,16 +14,16 @@
 		
 		<link href="./_app/immutable/assets/0.y3rYfe2O.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/7.Kf0qjzxR.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.bF-6fkYY.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.MsripV6V.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.T6BDavQk.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.675hSGee.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/paths.lV6SI1v7.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.yQC1JDB0.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.Qh4ViweI.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/control.g9yvpsvX.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.JtYgkdCz.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.RK9GFuXj.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.0HuHagjb.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.6mqwxi63.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.Dk--l-Ea.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/config.IX8X3kk1.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/7.9lKD-nTe.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/7.BAisMQQj.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/utils.RwzHMXmu.js"><title>Deploiement d'un service web avec Traefik.</title><!-- HEAD_svelte-ylbs26_START --><meta property="og:type" content="article"><meta property="og:title" content="Deploiement d'un service web avec Traefik."><!-- HEAD_svelte-ylbs26_END -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
@@ -60,7 +60,7 @@ Si vous n’utilisez pas cette distribution Unix ou que vous utilisez un autre s
 <p>Cet article est la suite directe de <a href="https://vadim-soude.github.io/Portfolio/traefik-docker" rel="nofollow">celui-ci</a>.</p>
 <p>Je vous invite vivement à avoir suivi la première partie avant de continuer.</p>
 <h2 id="dockeriser-de-vos-services-web">Dockeriser de vos services Web</h2>
-<p>Dans cet article, la demonstration sera faite avec Docker comme solution de déploiement de service web.</p>
+<p>Dans cet article, la démonstration sera faite avec Docker comme solution de déploiement de service web.</p>
 <p>Qu’est-ce que Docker ? C’est un outil qui permet de déployer des applications dans des conteneurs. Un conteneur est un environnement isolé qui contient tout ce dont une application a besoin pour fonctionner, y compris le code, les bibliothèques et les dépendances.</p>
 <p>En apprendre plus sur Docker <a href="https://www.docker.com" rel="nofollow">ici</a>.</p>
 <h2 id="modifications-à-apporter">Modifications à apporter</h2>
@@ -88,8 +88,8 @@ Si vous n’utilisez pas cette distribution Unix ou que vous utilisez un autre s
 <span class="line"><span style="color: #A6ACCD">  </span><span style="color: #5DE4C7">traefik</span><span style="color: #A6ACCD">:</span></span>
 <span class="line"><span style="color: #A6ACCD">    </span><span style="color: #5DE4C7">external</span><span style="color: #A6ACCD">: </span><span style="color: #5DE4C7">true</span></span></code></pre><!-- HTML_TAG_END -->
 <h2 id="configuration-dns">Configuration DNS</h2>
-<p>Pour accéder à votre service sur le sous domaine de votre choix, il faut que celui-ci soit résolu par un serveur DNS.</p>
-<p>Pour cela, il faut ajouter une entrée DNS de type A pour le sous domaine de votre choix, qui pointe vers l’adresse IP de votre serveur.</p>
+<p>Pour accéder à votre service sur le sous-domaine de votre choix, il faut que celui-ci soit résolu par un serveur DNS.</p>
+<p>Pour cela, il faut ajouter une entrée DNS de type A pour le sous-domaine de votre choix, qui pointe vers l’adresse IP de votre serveur.</p>
 <h2 id="comment-déployer">Comment déployer</h2>
 <p>Il vous suffit maintenant de faire <code>docker compose up -d</code>, votre service sera disponible sur le sous domaine de votre choix.</p></div>
 </article></div></main>
@@ -102,7 +102,7 @@ Si vous n’utilisez pas cette distribution Unix ou que vous utilisez un autre s
 			
 			<script>
 				{
-					__sveltekit_ok0j8y = {
+					__sveltekit_sfkcfw = {
 						assets: "/sveltekit-gh-pages",
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
@@ -113,8 +113,8 @@ Si vous n’utilisez pas cette distribution Unix ou que vous utilisez un autre s
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.bF-6fkYY.js"),
-						import("./_app/immutable/entry/app.JtYgkdCz.js")
+						import("./_app/immutable/entry/start.MsripV6V.js"),
+						import("./_app/immutable/entry/app.RK9GFuXj.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 7],
