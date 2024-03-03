@@ -1,5 +1,5 @@
 <section>
-	<h1 style="white-space: nowrap">Expériences professionnelles</h1><br><br>
+	<h1 style="white-space: nowrap;">Expériences professionnelles</h1><br><br>
 
 	<div class="box">
 		<h2>PoudlardRP</h2>
