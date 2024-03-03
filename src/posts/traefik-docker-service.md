@@ -22,7 +22,7 @@ Je vous invite vivement à avoir suivi la première partie avant de continuer.
 
 ## Dockeriser de vos services Web
 
-Dans cet article, la demonstration sera faite avec Docker comme solution de déploiement de service web.
+Dans cet article, la démonstration sera faite avec Docker comme solution de déploiement de service web.
 
 Qu'est-ce que Docker ? C'est un outil qui permet de déployer des applications dans des conteneurs. Un conteneur est un environnement isolé qui contient tout ce dont une application a besoin pour fonctionner, y compris le code, les bibliothèques et les dépendances.
  
@@ -63,9 +63,9 @@ networks:
 
 ## Configuration DNS
 
-Pour accéder à votre service sur le sous domaine de votre choix, il faut que celui-ci soit résolu par un serveur DNS.
+Pour accéder à votre service sur le sous-domaine de votre choix, il faut que celui-ci soit résolu par un serveur DNS.
 
-Pour cela, il faut ajouter une entrée DNS de type A pour le sous domaine de votre choix, qui pointe vers l'adresse IP de votre serveur.
+Pour cela, il faut ajouter une entrée DNS de type A pour le sous-domaine de votre choix, qui pointe vers l'adresse IP de votre serveur.
 
 ## Comment déployer
 
